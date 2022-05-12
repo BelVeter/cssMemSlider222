@@ -2,3 +2,20 @@
     width: 500px;
     height: 500px;
 }
+
+.slider{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide{
+    scroll-snap-align: center;
+    transform-origin: center center;
+    transform: scale(1);
+}
