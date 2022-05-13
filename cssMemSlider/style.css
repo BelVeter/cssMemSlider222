@@ -1,3 +1,9 @@
+.container{
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+}
+
 .slide img {
     width: 500px;
     height: 500px;
@@ -16,29 +22,75 @@
 
 .slide{
     scroll-snap-align: center;
-    transform-origin: center center;
-    transform: scale(1);
+    position: relative;
+    /* transform-origin: center center;
+    transform: scale(1); */
 }
 
 .previous{
     position: absolute;
     background-color: transparent;
-    width: 0px;
-    height: 0px;
-
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid blue;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    top: 222px;
+    left: 0px;
+    z-index: 2;
+    opacity: 0;
 }
 
 .next{
     position: absolute;
     background-color: transparent;
-    width: 0px;
-    height: 0px;
-    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    top: 222px;
+    right: 0px;
+    z-index: 2;
+    opacity: 0;
 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid blue;
+    /* border: solid wheat 2px; */
+}
+
+.fake-left-arrow{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    transform: rotate(-45deg);
+    top: 290px;
+    left: 13px;
+}
+
+.fake-right-arrow{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    transform: rotate(135deg);
+    top: 290px;
+    right: 10px;
+}
+
+.dot-links-list{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+}
+
+.dot-link{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: yellow;
 }
