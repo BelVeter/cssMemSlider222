@@ -10,42 +10,36 @@
 <body>
     <div class="container">
         <h1>The Cool mem slider</h1>
+        <input type="radio" name="radio" id="slide1" checked>
+        <input type="radio" name="radio" id="slide2">
+        <input type="radio" name="radio" id="slide3">
+        <input type="radio" name="radio" id="slide4">
+        <input type="radio" name="radio" id="slide5">
         <div class="slider">
-            <div class="slide" id="slide1">
-                <a class="previous" href="#slide5"></a>
-                <a class="next" href="#slide2"></a>
-                <img src="./imgs/slide1.jpeg" alt="Slide">
+            <div class="img-slider">
+                <img class="img1" src="imgs/slide1.jpeg" alt="">
+                <img class="img2" src="imgs/slide2.jpeg" alt="">
+                <img class="img3" src="imgs/slide3.jpeg" alt="">
+                <img class="img4" src="imgs/slide4.jpeg" alt="">
+                <img class="img5" src="imgs/slide5.jpeg" alt="">
             </div>
-            <div class="slide" id="slide2">
-                <a class="previous" href="#slide1"></a>
-                <a class="next" href="#slide3"></a>
-                <img src="./imgs/slide2.jpeg" alt="Slide">
-            </div>
-            <div class="slide" id="slide3">
-                <a class="previous" href="#slide2"></a>
-                <a class="next" href="#slide4"></a>
-                <img src="./imgs/slide3.jpeg" alt="Slide">
-            </div>
-            <div class="slide" id="slide4">
-                <a class="previous" href="#slide3"></a>
-                <a class="next" href="#slide5"></a>
-                <img src="./imgs/slide4.jpeg" alt="Slide">
-            </div>
-            <div class="slide" id="slide5">
-                <a class="previous" href="#slide4"></a>
-                <a class="next" href="#slide1"></a>
-                <img src="./imgs/slide5.jpeg" alt="Slide">
+            <div class="line2">
+                <div class="text-slider">
+                    <span class="slide1">some slide 1 text</span>
+                    <span class="slide2">some slide 2 text</span>
+                    <span class="slide3">some slide 3 text</span>
+                    <span class="slide4">some slide 4 text</span>
+                    <span class="slide5">some slide 5 text</span>
+                </div>
+                <div class="controlls">
+                    <label class="controll" for="slide1"></label>
+                    <label class="controll" for="slide2"></label>
+                    <label class="controll" for="slide3"></label>
+                    <label class="controll" for="slide4"></label>
+                    <label class="controll" for="slide5"></label>
+                </div>
             </div>
         </div>
-        <div class="fake-left-arrow"></div>
-        <div class="fake-right-arrow"></div>
-        <ul class="dot-links-list">
-            <li><a class="dot-link" href="#slide1"></a></li>
-            <li><a class="dot-link" href="#slide2"></a></li>
-            <li><a class="dot-link" href="#slide3"></a></li>
-            <li><a class="dot-link" href="#slide4"></a></li>
-            <li><a class="dot-link" href="#slide5"></a></li>
-        </ul>
     </div>
 </body>
 </html>
